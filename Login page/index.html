@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Akash Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="name">Akash Login Page </h1>
+        <div class="role-selector">
+            <label>
+                <input type="radio" name="role" value="admin" onclick="showForm('admin')">
+                Admin
+            </label>
+            <label>
+                <input type="radio" name="role" value="underwriter" onclick="showForm('underwriter')">
+                Underwriter
+            </label>
+        </div>
+        <form id="admin-form" action="admin_dashboard.html" method="post" style="display: none;">
+            <h2>Admin Login</h2>
+            <input type="text" name="adminUserId" placeholder="Admin User ID" required>
+            <input type="password" name="adminPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <form id="underwriter-form" action="underwriter_dashboard.html" method="post" style="display: none;">
+            <h2>Underwriter Login</h2>
+            <input type="text" name="underwriterUserId" placeholder="User ID" required>
+            <input type="password" name="underwriterPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+      
+    </script>
+</body>
+</html>
